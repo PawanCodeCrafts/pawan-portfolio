@@ -4,7 +4,7 @@ A sleek, responsive, and fully customizable **animated portfolio website** built
 
 ## 🚀 Live Demo
 
-🔗 [View Portfolio Live]()
+🔗 [View Portfolio Live](https://pawanpreet.vercel.app/)
 
 ## 🛠️ Tech Stack
 
@@ -50,5 +50,5 @@ npm run build
 
 ## 🌟 Credits
 
-This project was created with ❤️ by.
+This project was created with ❤️ by [PawanCodeCrafts](https://pawanpreet.vercel.app/).
 If you like it, feel free to ⭐ this repository and share!
