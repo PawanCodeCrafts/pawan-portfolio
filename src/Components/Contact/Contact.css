@@ -1,0 +1,142 @@
+.contact-section {
+    padding: 100px 20px 80px 20px;
+    background: var(--bg-primary);
+}
+
+.contact-container {
+    max-width: 950px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+/* LEFT */
+.contact-info h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: var(--main-color);
+}
+
+.contact-info p {
+    color: var(--text-secondary);
+    margin-bottom: 25px;
+    max-width: 400px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+}
+
+.info-item svg {
+    color: var(--btn-hover-color);
+    font-size: 18px;
+}
+
+/* RIGHT FORM */
+.contact-form {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    padding: 12px 14px;
+    border-radius: 10px;
+    color: var(--text-primary);
+    font-size: 14px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--btn-hover-color);
+}
+
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.send-btn {
+    background: var(--btn-hover-color);
+    color: var(--black);
+    border: 1px solid var(--btn-hover-color);
+    padding: 9px 15px;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.send-btn:hover {
+    background: none;
+    color: var(--main-color);
+    box-shadow: inset 0 0 10px var(--main-color);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .contact-info p {
+        margin: 0 auto 25px;
+    }
+
+    .info-item {
+        justify-content: center;
+    }
+}
+
+
+.connect-content {
+    padding-top: 150px;
+    padding-bottom: 30px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.connect-content h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: var(--text-primary);
+}
+
+.connect-item {
+    margin-bottom: 20px;
+}
+
+.connect-item h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.connect-item p {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}

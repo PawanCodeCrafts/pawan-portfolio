@@ -1,0 +1,28 @@
+.btn_color_outline {
+    background-color: transparent;
+    padding: 5px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    box-shadow: inset 0 0 10px var(--main-color);
+    transition: all 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn_color_outline:hover {
+    background-color: var(--btn-hover-color);
+    color: var(--white);
+}
+
+.arrow_rotate {
+    display: inline-flex;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    top: 3px;
+}
+
+.btn_color_outline:hover .arrow_rotate {
+    transform: rotate(90deg);
+}

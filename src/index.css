@@ -1,0 +1,110 @@
+/* =============== CSS variables ============ */
+:root {
+
+    /* ============== COLORS ============ */
+    /* --bg-primary: #000308; */
+    --bg-secondary: #080b14;
+    --bg-primary: #080a10;
+    --main-color: #27E0B3;
+    --btn-hover-color: #05ac82;
+    --scroll-color: #0494703e;
+    --white: #ffffff;
+    --black: #000000;
+    --text-primary: #e0e6ed;
+    --text-secondary: #b8c1d4;
+    --text-muted: #8a9ab8;
+    --border-color: #3a4455;
+    --shadow-color: rgba(10, 14, 23, 0.5);
+
+    /* ========== TYPOGRAPHY ========= */
+    --font-family: Helvetica;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 1.5rem;
+    --font-size-xxl: 2.5rem;
+    --font-weight-normal: 400;
+    --font-weight-bold: 800;
+}
+
+/* =============== Base Styles ============ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    background-color: var(--bg-primary) !important;
+    color: var(--text-primary);
+    overflow-x: hidden;
+    line-height: 1.6;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* scrollbar custom styles */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scroll-color);
+    border-radius: 100px;
+    transition: all 0.3s ease-in;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #05ac82;
+}
+
+/* custom selection style */
+::selection {
+    color: var(--btn-hover-color);
+    background-color: #020000;
+}
+
+/* heading */
+
+.header_wrapper {
+    text-align: center;
+    margin: 50px 0px 30px 0px;
+}
+
+
+.heading1 {
+    color: var(--text-primary);
+    font-size: 35px;
+    position: relative;
+    display: inline-block;
+}
+
+.heading1::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    display: block;
+    bottom: 0;
+    left: 0;
+    background: var(--main-color);
+}
+
+.heading1 span {
+    color: var(--main-color);
+}
+
+section {
+    scroll-margin-top: 60px;
+}
