@@ -1,4 +1,4 @@
-# 🌐 Animated Portfolio Website
+# 🌐 My Portfolio Website
 
 A sleek, responsive, and fully customizable **animated portfolio website** built using **React.js**.
 
