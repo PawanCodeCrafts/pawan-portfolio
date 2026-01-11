@@ -1,24 +1,34 @@
 import React from "react";
 import "./Projects.css";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import git from "../../assets/git.png";
+import newsapp from "../../assets/newsapp.png";
+import portfolio from "../../assets/portfolio.png";
+import desirasoi from "../../assets/desirasoi.png";
 
 const projects = [
     {
-        title: "E-Commerce Web Application",
-        desc: "A scalable e-commerce platform with modern UI, cart system, and responsive design focused on user experience.",
-        tech: ["html", "css", "Bootstrap", "Django"],
-        image: "#",
-        github: "#",
-        live: "#",
+        title: "Namaste News",
+        desc: "News App is a modern and user-friendly application that delivers real-time news from various sources. Get breaking news, trending topics, and category-wise articles in a clean and minimalistic UI.",
+        tech: ["Bootstrap", "React.js"],
+        image: newsapp,
+        github: "https://github.com/PawanCodeCrafts/NamasteNews",
+        live: "https://pawancodecrafts.github.io/NamasteNews/",
     },
     {
         title: "Personal Portfolio",
         desc: "A modern portfolio website showcasing skills, projects, and contact details with a clean and responsive layout.",
-        tech: ["React", "CSS"],
-        image: "#",
-        github: "#",
-        live: "#",
+        tech: ["React.js", "CSS"],
+        image: portfolio,
+        github: "https://github.com/PawanCodeCrafts/pawan-portfolio",
+        live: "https://pawanpreet.vercel.app/",
+    },
+    {
+        title: "Restaurant webpage",
+        desc: " Desi Rasoi - A simple restaurant landing page built with HTML, CSS, and smooth AOS animations.",
+        tech: ["html", "CSS", "Javascript", "aos-animation"],
+        image: desirasoi,
+        github: "https://github.com/PawanCodeCrafts/desirasoi",
+        live: "https://pawancodecrafts.github.io/DesiRasoi/",
     },
 ];
 
